@@ -1,4 +1,4 @@
-CAX302 Software Development
+CAB302 Software Development
 ===========================
 Practical 1, Week 1 (Semester 1, 2015)
 ----------------
@@ -46,7 +46,7 @@ You should now see an editing window with an empty program template something li
 The challenge from this point is to create a program which will decode a "secret message". The message is encoded as an array of numbers, declared as the following constant:
 
     /* The secret message */
-    final int[] message = {82, 96, 103, 103, 27, 95, 106, 105, 96, 28};
+    final int[] message = { 82, 96, 103, 103, 27, 95, 106, 105, 96, 28 };
 
 It can be unlocked with a particular key, declared as follows:
 
@@ -92,7 +92,7 @@ compilation error.)
 
 This exercise will give you practice at writing a subroutine (method) in Java involving a conditional (__`if`__ or __`switch`__) statement. Quadcharts are a commonly-used technique for making decisions involving two independent variables. For instance, the following quadchart suggests the response you should make when asked by your boss to complete a job, given its level of difficulty and expected duration.
 
-&nbsp;  | **Easy Job** | **Hard Job**
+.  | **Easy Job** | **Hard Job**
 --:|:----------:|:---------:
 **Short Deadline** | Discuss | Decline
 **Long Deadline** | Accept | Discuss
