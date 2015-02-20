@@ -1,0 +1,83 @@
+<h1 id="cax302-software-development">CAX302 Software Development</h1>
+<h2 id="practical-1-week-1-semester-1-2015">Practical 1, Week 1 (Semester 1, 2015)</h2>
+<h1 id="introducing-java-and-eclipse">Introducing Java and Eclipse</h1>
+<p>This week's practical exercises aim to get you familiar with writing and debugging simple Java programs using the Eclipse integrated development environment.</p>
+<hr />
+<h2 id="exercise-0-getting-started">Exercise 0: Getting Started</h2>
+<p>Consult the <em>Software Environment Handbook</em> for instructions on how to install Java and Eclipse on your own computer, or follow your tutor's instructions for how to find the pre-installed version in the labs.</p>
+<p>When you first start Eclipse you will see a splash screen. This may be followed by a request to choose your <em>workspace</em>, or a default may be used. The workspace is the folder where Eclipse will store your files. If you want to save your work for later you should choose a location from which you can retrieve the files easily afterwards, such as your home drive or a memory stick. To change the (current or default) workspace go to <code>File &gt; Switch Workspace</code>.</p>
+<p>When Eclipse is started for the first time you will see a Welcome screen similar to the one below (this is Indigo EE; yours may be different as they may change slightly with each release). The big arrow on the right will enter an Eclipse development session in your selected workspace.</p>
+<div class="figure">
+<img src="imgs/welcome.jpg" title="Eclipse Welcome" alt="Eclipse welcome screen" /><p class="caption">Eclipse welcome screen</p>
+</div>
+<p>Explore the various buttons and options available. In particular, make sure you know how to:</p>
+<ul>
+<li>switch perspectives (especially <code>Java</code> and <code>Debug</code> <img src="imgs/jdbtns.jpg" title="Java/Debug buttons" alt="Java/Debug buttons" />);</li>
+<li>minimise and maximise <em>views</em> (subwindows);</li>
+<li>delete and recover views (via the <code>Window &gt; Show View</code> pulldown menu);</li>
+<li>detach views from the workbench as free-floating windows and dock them again (by right-clicking the label and un/selecting <code>Detached</code>);</li>
+<li>create a project, package and class <img src="imgs/ppcbtns.jpg" title="Project/Package/Class buttons" alt="Project/Package/Class buttons" />; and</li>
+<li>create new workspaces (by 'switching workspaces' to <code>Other</code>).</li>
+</ul>
+<hr />
+<h2 id="exercise-1-a-message-decoder">Exercise 1: A message decoder</h2>
+<p>As a first exercise involving iteration and console output in Java you will develop a small program to decode a secret message. In a fresh <em>workspace</em> (e.g., '<code>Prac01</code>') in Eclipse's Java perspective, create a new <em>project</em> (e.g., '<code>Exercises</code>'). Within that project create a new <em>package</em> (e.g., '<code>myAnswers</code>'). Then create a new <em>class</em> called '<code>Decoder</code>', making sure that you check the box for a</p>
+<pre><code>public static void main(String[] args)</code></pre>
+<p>method stub (or you can enter this text later in the editor).</p>
+<p>You should now see an editing window with an empty program template something like this:</p>
+<div class="figure">
+<img src="imgs/decoder.jpg" title="Empty template program" alt="Empty template program" /><p class="caption">Empty template program</p>
+</div>
+<p>The challenge from this point is to create a program which will decode a &quot;secret message&quot;. The message is encoded as an array of numbers, declared as the following constant:</p>
+<pre><code>/* The secret message */
+final int[] message = {82, 96, 103, 103, 27, 95, 106, 105, 96, 28};</code></pre>
+<p>It can be unlocked with a particular key, declared as follows:</p>
+<pre><code>/* The key for unlocking the message */
+final int key = 5;</code></pre>
+<p>Copy these two declarations into your main program. Then, to unlock the message, you need to write Java code that will:</p>
+<ol style="list-style-type: decimal">
+<li>add the key to each number in the message;</li>
+<li>convert each number in the message to its equivalent character representation (most easily done by type-casting the numbers to <strong><code>char</code></strong> type); and</li>
+<li>print each of the resulting characters (which is most easily done using method <code>System.out.print()</code>, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#method_summary">other methods of <code>System.out</code> are listed here</a>).</li>
+</ol>
+<p>Ask your tutor if you're not sure how to do any of these things.</p>
+<p>As you edit your program, take note of how Eclipse generates error and warning messages for incomplete or incorrect code segments. In particular, try out the 'quick fix' feature by right-clicking on an error or warning icon <img src="imgs/warningico.jpg" title="warning icon" alt="warning icon" />, and select a suitable solution for your problem, if one is available.</p>
+<p><strong>Hint:</strong> As usual when programming, <em>think</em> before you type. This exercise can be solved very concisely.</p>
+<p><strong>Hint:</strong> This is a good opportunity to use a 'for each' loop.</p>
+<p><strong>Extra exercise:</strong> If time permits, develop a corresponding 'encoder' program that prints a string as a sequence of numbers. This time the key should be <em>subtracted</em> from the number corresponding to each character. You may find a helpful method or two in Java's <code>String</code> class -- look it up in the <a href="http://docs.oracle.com/javase/7/docs/api/">Java API Specification</a>. (You'll be spending a lot of time browsing this document in coming weeks!)</p>
+<hr />
+<h2 id="exercise-2-debugging-a-summation-program">Exercise 2: Debugging a 'summation' program</h2>
+<p>This exercise will give you practice in using Eclipse's debugger. Get the Java program <code>Summation.java</code> (it is part of the Git repository that contained this file). This program is meant to calculate the sum of the natural numbers in a given range. The range is expressed by constants for the starting and finishing numbers, inclusive. Recall, for instance that the sum of <code>i</code> over 1&lt;=<code>i</code>&lt;=5 is 15.</p>
+<p>Load the program into your project, either: by copying it directly into your Eclipse workspace using your operating system's file browser and alerting Eclipse to the change (via <code>File &gt; Refresh</code>); by creating a new class and copying the program text into Eclipse's Java editor; or by dragging it from the file browser into the package in Eclipse. (No matter how you do it, make sure that the <strong><code>package</code></strong> declaration at the beginning of the program matches the name of your package, otherwise you will get a compilation error.)</p>
+<p><strong>(a)</strong> Run the program with a <code>START</code> value of 1 and an <code>END</code> value of 5. Is the answer what you expected? Use Eclipse's debugging perspective <img src="imgs/debugico.jpg" title="debug perspective icon" alt="debug perspective icon" /> to examine the program's behaviour as it executes. In the add method double click in the grey bar just to the left of the <strong><code>for</code></strong> loop statement. This adds a <em>breakpoint</em> <img src="imgs/breakpoint.jpg" title="breakpoint icon" alt="breakpoint icon" /> to the application. Now 'debug' rather than 'run' the program. You will be able to control the program's execution using the various debugging buttons <img src="imgs/variousbtns.jpg" title="various debugging icons" alt="various debugging icons" />. Step through the program and watch how variables <code>index</code> and <code>total</code> change. By doing this you should be able to spot and fix the coding error.</p>
+<p><strong>Note:</strong> If you hover the cursor over a variable when the program is stopped the variable's value is displayed.</p>
+<p><strong>Note:</strong> If you want to observe the behaviour of code in a '<code>main</code>' method, make sure that the '<code>Stop in main</code>' box is checked under <code>Run &gt; Debug Configurations</code>.</p>
+<p><strong>(b)</strong> Having corrected the error in the program, now change the value of constant <code>END</code> to 1000. Run the program. Does the answer look correct? Go back into the debugging perspective and see if you can identify and fix this new problem. (This may require some patience!)</p>
+<hr />
+<h2 id="exercise-3-a-decision-making-method">Exercise 3: A 'decision making' method</h2>
+<p>This exercise will give you practice at writing a subroutine (method) in Java involving a conditional (<strong><code>if</code></strong> or <strong><code>switch</code></strong>) statement. Quadcharts are a commonly-used technique for making decisions involving two independent variables. For instance, the following quadchart suggests the response you should make when asked by your boss to complete a job, given its level of difficulty and expected duration.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right"> </th>
+<th align="center"><strong>Easy Job</strong></th>
+<th align="center"><strong>Hard Job</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><strong>Short Deadline</strong></td>
+<td align="center">Discuss</td>
+<td align="center">Decline</td>
+</tr>
+<tr class="even">
+<td align="right"><strong>Long Deadline</strong></td>
+<td align="center">Accept</td>
+<td align="center">Discuss</td>
+</tr>
+</tbody>
+</table>
+<p>If the job is easy and there is plenty of time to complete it you should accept. If the job is hard and there is very little time you should decline. If the job is easy but the deadline is short you should negotiate for an extension of time. If there is plenty of time to complete the work but the job is hard you should negotiate for more staff.</p>
+<p>As a management aid, your task is to define a function that accepts estimates of a job's duration (in months) and difficulty (on a scale of 1 to 10) and returns a string indicating which of the three possible responses you should make, &quot;<code>accept</code>&quot;, &quot;<code>decline</code>&quot; or &quot;<code>discuss</code>&quot;. Jobs with a duration of three months or less are considered 'short' and jobs with a difficulty level of seven or more are considered 'hard'. (To simplify the solution you can hardwire these values as constants into your program, although this is not normally good programming practice.)</p>
+<p>To start, get the Java file <code>DecisionMaker.java</code> from the repository. This program template contains a '<code>main</code>' method which serves to test the desired <code>decision</code> method. Your task is to complete the program by writing the missing <code>decision</code> method so that the program produces the results 'accept', 'decline', 'discuss' and 'discuss' for the four proposed projects, respectively. (Later in this unit we will introduce a far more systematic way of testing programs.)</p>
+<p><strong>Observation:</strong> This exercise is good practice at writing conditional statements. Making a three-way decision based on two variables is awkward, no matter how it's coded.</p>
