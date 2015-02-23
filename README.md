@@ -43,7 +43,7 @@ method stub (or you can enter this text later in the editor).
 
 You should now see an editing window with an empty program template something like this:
 
-![Empty template program](imgs/decoder.jpg "Empty template program")
+![Empty template program](imgs/decoder.png "Empty template program")
 
 The challenge from this point is to create a program which will decode a "secret message". The message is encoded as an array of numbers, declared as the following constant:
 

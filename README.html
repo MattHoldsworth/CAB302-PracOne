@@ -4,7 +4,7 @@
 <p>This week's practical exercises aim to get you familiar with writing and debugging simple Java programs using the Eclipse integrated development environment.</p>
 <hr />
 <h2 id="exercise-0-getting-started">Exercise 0: Getting Started</h2>
-<p>Consult the <em>Software Environment Handbook</em> for instructions on how to install Java and Eclipse on your own computer, or follow your tutor's instructions for how to find the pre-installed version in the labs.</p>
+<p>Consult the <a href="http://cab302.bitbucket.org/SoftwareHandbook2015.pdf"><em>Software Environment Handbook</em></a> for instructions on how to install <strong>Java</strong> and <strong>Eclipse</strong> on your own computer (don't worry about installing <strong>ant</strong>, <strong>git</strong>, or <strong>egit</strong> yet -- these are for later practicals), or follow your tutor's instructions for how to find the pre-installed version in the labs.</p>
 <p>When you first start Eclipse you will see a splash screen. This may be followed by a request to choose your <em>workspace</em>, or a default may be used. The workspace is the folder where Eclipse will store your files. If you want to save your work for later you should choose a location from which you can retrieve the files easily afterwards, such as your home drive or a memory stick. To change the (current or default) workspace go to <code>File &gt; Switch Workspace</code>.</p>
 <p>When Eclipse is started for the first time you will see a Welcome screen similar to the one below (this is Indigo EE; yours may be different as they may change slightly with each release). The big arrow on the right will enter an Eclipse development session in your selected workspace.</p>
 <div class="figure">
@@ -19,14 +19,15 @@
 <li>create a project, package and class <img src="imgs/ppcbtns.jpg" title="Project/Package/Class buttons" alt="Project/Package/Class buttons" />; and</li>
 <li>create new workspaces (by 'switching workspaces' to <code>Other</code>).</li>
 </ul>
+<p>Now, import the Practical 1 project into your Eclipse workspace following <a href="http://cab302.bitbucket.org/dlpracs.html">these instructions</a>.</p>
 <hr />
 <h2 id="exercise-1-a-message-decoder">Exercise 1: A message decoder</h2>
-<p>As a first exercise involving iteration and console output in Java you will develop a small program to decode a secret message. In a fresh <em>workspace</em> (e.g., '<code>Prac01</code>') in Eclipse's Java perspective, create a new <em>project</em> (e.g., '<code>Exercises</code>'). Within that project create a new <em>package</em> (e.g., '<code>myAnswers</code>'). Then create a new <em>class</em> called '<code>Decoder</code>', making sure that you check the box for a</p>
+<p>As a first exercise involving iteration and console output in Java you will develop a small program to decode a secret message. In the <code>prac01-intro</code> project, create a new <em>package</em> (e.g., '<code>answers</code>'). Then create a new <em>class</em> called '<code>Decoder</code>', making sure that you check the box for a:</p>
 <pre><code>public static void main(String[] args)</code></pre>
 <p>method stub (or you can enter this text later in the editor).</p>
 <p>You should now see an editing window with an empty program template something like this:</p>
 <div class="figure">
-<img src="imgs/decoder.jpg" title="Empty template program" alt="Empty template program" /><p class="caption">Empty template program</p>
+<img src="imgs/decoder.png" title="Empty template program" alt="Empty template program" /><p class="caption">Empty template program</p>
 </div>
 <p>The challenge from this point is to create a program which will decode a &quot;secret message&quot;. The message is encoded as an array of numbers, declared as the following constant:</p>
 <pre><code>/* The secret message */
