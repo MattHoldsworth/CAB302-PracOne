@@ -99,8 +99,8 @@ This exercise will give you practice at writing a subroutine (method) in Java in
 
 If the job is easy and there is plenty of time to complete it you should accept. If the job is hard and there is very little time you should decline. If the job is easy but the deadline is short you should negotiate for an extension of time. If there is plenty of time to complete the work but the job is hard you should negotiate for more staff.
 
-As a management aid, your task is to define a function that accepts estimates of a job's duration (in months) and difficulty (on a scale of 1 to 10) and returns a string indicating which of the three possible responses you should make, "`accept`", "`decline`" or "`discuss`". Jobs with a duration of three months or less are considered 'short' and jobs with a difficulty level of seven or more are considered
-'hard'. (To simplify the solution you can hardwire these values as constants into your
+As a management aid, your task is to define a function that accepts estimates of a job's duration (in months) and difficulty (on a scale of 1 to 10) and returns a string indicating which of the three possible responses you should make, "`accept`", "`decline`" or "`discuss`". ___Jobs with a duration of three months or less are considered 'short' and jobs with a difficulty level of seven or more are considered
+'hard'___. (To simplify the solution you can hardwire these values as constants into your
 program, although this is not normally good programming practice.)
 
 To start, get the Java file `DecisionMaker.java` from the repository. This program template contains a '`main`' method which serves to test the desired `decision` method. Your task is to complete the program by writing the missing `decision` method so that the program produces the results 'accept', 'decline', 'discuss' and 'discuss' for the four proposed projects, respectively. (Later in this unit we will introduce a far more systematic way of testing programs.) 
