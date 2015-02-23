@@ -11,7 +11,7 @@ This week's practical exercises aim to get you familiar with writing and debuggi
 
 ## Exercise 0: Getting Started ##
 
-Consult the _Software Environment Handbook_ for instructions on how to install Java and Eclipse on your own computer, or follow your tutor's instructions for how to find the pre-installed version in the labs.
+Consult the [_Software Environment Handbook_](http://cab302.bitbucket.org/SoftwareHandbook2015.pdf) for instructions on how to install __Java__ and __Eclipse__ on your own computer (don't worry about installing __ant__, __git__, or __egit__ yet -- these are for later practicals), or follow your tutor's instructions for how to find the pre-installed version in the labs.
 
 When you first start Eclipse you will see a splash screen. This may be followed by a request to choose your _workspace_, or a default may be used. The workspace is the folder where Eclipse will store your files. If you want to save your work for later you should choose a location from which you can retrieve the files easily afterwards, such as your home drive or a memory stick. To change the (current or default) workspace go to `File > Switch Workspace`.
 
@@ -29,11 +29,13 @@ how to:
 * create a project, package and class ![Project/Package/Class buttons](imgs/ppcbtns.jpg "Project/Package/Class buttons"); and
 * create new workspaces (by 'switching workspaces' to `Other`).
 
+Now, import the Practical 1 project into your Eclipse workspace following [these instructions](http://cab302.bitbucket.org/dlpracs.html).
+
 * * *
 
 ## Exercise 1: A message decoder ##
 
-As a first exercise involving iteration and console output in Java you will develop a small program to decode a secret message. In a fresh _workspace_ (e.g., '`Prac01`') in Eclipse's Java perspective, create a new _project_ (e.g., '`Exercises`'). Within that project create a new _package_ (e.g., '`myAnswers`'). Then create a new _class_ called '`Decoder`', making sure that you check the box for a
+As a first exercise involving iteration and console output in Java you will develop a small program to decode a secret message. In the `prac01-intro` project, create a new _package_ (e.g., '`answers`'). Then create a new _class_ called '`Decoder`', making sure that you check the box for a:
 
     public static void main(String[] args)
 
@@ -106,5 +108,3 @@ program, although this is not normally good programming practice.)
 To start, get the Java file `DecisionMaker.java` from the repository. This program template contains a '`main`' method which serves to test the desired `decision` method. Your task is to complete the program by writing the missing `decision` method so that the program produces the results 'accept', 'decline', 'discuss' and 'discuss' for the four proposed projects, respectively. (Later in this unit we will introduce a far more systematic way of testing programs.) 
 
 **Observation:** This exercise is good practice at writing conditional statements. Making a three-way decision based on two variables is awkward, no matter how it's coded.
-
-
