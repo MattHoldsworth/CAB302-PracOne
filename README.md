@@ -1,6 +1,6 @@
 CAB302 Software Development
 ===========================
-Practical 1, Week 1 (Semester 1, 2015)
+Practical 1
 ----------------
 
 # Introducing Java and Eclipse #
