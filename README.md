@@ -11,7 +11,7 @@ This week's practical exercises aim to get you familiar with writing and debuggi
 
 ## Exercise 0: Getting Started ##
 
-Consult the [_Software Environment Handbook_](http://cab302.bitbucket.org/SoftwareHandbook2015.pdf) for instructions on how to install __Java__ and __Eclipse__ on your own computer, or follow your tutor's instructions for how to find the pre-installed version in the labs.
+Consult the [_Software Environment Handbook_](http://cab302.bitbucket.org/pdfs/SoftwareHandbook2015.pdf) for instructions on how to install __Java__ and __Eclipse__ on your own computer, or follow your tutor's instructions for how to find the pre-installed version in the labs.
 
 When you first start Eclipse you will see a splash screen. This may be followed by a request to choose your _workspace_, or a default may be used. The workspace is the folder where Eclipse will store your files. If you want to save your work for later you should choose a location from which you can retrieve the files easily afterwards, such as your home drive or a memory stick. To change the (current or default) workspace go to `File > Switch Workspace`.
 
