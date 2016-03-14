@@ -1,17 +1,15 @@
 CAB302 Software Development
 ===========================
-Practical 1
-----------------
 
-# Introducing Java and Eclipse #
+# Practical 1: Introducing Java and Eclipse
 
 This week's practical exercises aim to get you familiar with writing and debugging simple Java programs using the Eclipse integrated development environment.
 
 * * *
 
-## Exercise 0: Getting Started ##
+## Exercise 0: Getting Started
 
-Consult the [_Software Environment Handbook_](http://cab302.bitbucket.org/pdfs/SoftwareHandbook2015.pdf) for instructions on how to install __Java__ and __Eclipse__ on your own computer, or follow your tutor's instructions for how to use a version on the lab machines. 
+Consult the [_Software Environment Handbook_](http://cab302.bitbucket.org/pdfs/SoftwareHandbook.pdf) for instructions on how to install __Java__ and __Eclipse__ on your own computer, or follow your tutor's instructions for how to use a version on the lab machines.
 
 When you first start Eclipse you will see a splash screen. This may be followed by a request to choose your _workspace_, or a default may be used. The workspace is the folder where Eclipse will store your files. If you want to save your work for later you should choose a location from which you can retrieve the files easily afterwards, such as your home drive or a memory stick. To change the (current or default) workspace go to `File > Switch Workspace`.
 
@@ -33,7 +31,7 @@ Now, import the Practical 1 project into your Eclipse workspace following [these
 
 * * *
 
-## Exercise 1: A message decoder ##
+## Exercise 1: A message decoder
 
 As a first exercise involving iteration and console output in Java you will develop a small program to decode a secret message. In the `prac01-intro` project, create a new _package_ (e.g., '`answers`'). Then create a new _class_ called '`Decoder`', making sure that you check the box for a:
 
@@ -74,7 +72,8 @@ solution for your problem, if one is available.
 
 * * *
 
-## Exercise 2: Debugging a 'summation' program ##
+## Exercise 2: Debugging a 'summation' program
+
 This exercise will give you practice in using Eclipse's debugger. Get the Java program `Summation.java` (it is part of the Git repository that contained this file). This program is meant to calculate the sum of the natural numbers in a given range. The range is expressed by constants for the starting and finishing numbers, inclusive. Recall, for instance that the sum of `i` over 1<=`i`<=5 is 15.
 
 Load the program into your project, either: by copying it directly into your Eclipse workspace using your operating system's file browser and alerting Eclipse to the change (via `File > Refresh`); by creating a new class and copying the program text into Eclipse's Java editor; or by dragging it from the file browser into the package in Eclipse. (No matter how you do it, make sure that the __`package`__ declaration at the beginning of the program matches the name of your package, otherwise you will get a
@@ -90,7 +89,7 @@ compilation error.)
 
 * * *
 
-## Exercise 3: A 'decision making' method ##
+## Exercise 3: A 'decision making' method
 
 This exercise will give you practice at writing a subroutine (method) in Java involving a conditional (__`if`__ or __`switch`__) statement. Quadcharts are a commonly-used technique for making decisions involving two independent variables. For instance, the following quadchart suggests the response you should make when asked by your boss to complete a job, given its level of difficulty and expected duration.
 
