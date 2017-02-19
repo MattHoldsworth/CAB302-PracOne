@@ -8,7 +8,7 @@ This week's practical exercises aim to get you familiar with writing and debuggi
 * * *
 
 ## Exercise 0: Getting Started
-Text resources for this practical are available on Blackboard via CAB302->Learning Resources->Help Guides and Other Resources. Links to windows executables for Eclipse and other programmes can also be found on Blackboard via CAB302->Learning Resources->Windows Software.
+Text resources for this practical are available on Blackboard via `CAB302->Learning Resources->Help Guides and Other Resources`. Links to windows executables for Eclipse and other programmes can also be found on Blackboard via `CAB302->Learning Resources->Windows Software`.
 
 Consult the [_Software Environment Handbook_] on Blackboard for instructions on how to install __Java__ and __Eclipse__ on your own computer, or follow your tutor's instructions for how to use a version on the lab machines.
 
