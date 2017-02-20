@@ -10,7 +10,7 @@ This week's practical exercises aim to get you familiar with writing and debuggi
 ## Exercise 0: Getting Started
 Text resources for this practical are available on Blackboard via `CAB302->Learning Resources->Help Guides and Other Resources`. Links to windows executables for Eclipse and other programmes can also be found on Blackboard via `CAB302->Learning Resources->Windows Software`.
 
-Consult the [_Software Environment Handbook_] on Blackboard for instructions on how to install __Java__ and __Eclipse__ on your own computer, or follow your tutor's instructions for how to use a version on the lab machines.
+Consult the _Software Environment Handbook_ on Blackboard for instructions on how to install __Java__ and __Eclipse__ on your own computer, or follow your tutor's instructions for how to use a version on the lab machines.
 
 When you first start Eclipse you will see a splash screen. This may be followed by a request to choose your _workspace_, or a default may be used. The workspace is the folder where Eclipse will store your files. If you want to save your work for later you should choose a location from which you can retrieve the files easily afterwards, such as your home drive or a memory stick. To change the (current or default) workspace go to `File > Switch Workspace`.
 
@@ -28,7 +28,7 @@ how to:
 * create a project, package and class ![Project/Package/Class buttons](imgs/ppcbtns.jpg "Project/Package/Class buttons"); and
 * create new workspaces (by 'switching workspaces' to `Other`).
 
-Now, import the Practical 1 project into your Eclipse workspace following the [_Git for Pracs_] instructions on Blackboard.
+Now, import the Practical 1 project into your Eclipse workspace following the _Git for Pracs_ instructions on Blackboard.
 
 * * *
 
