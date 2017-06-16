@@ -9,7 +9,7 @@ public class DecisionMaker {
 	 * the number of months required to complete the job and the
 	 * perceived level of difficulty, on a 1 to 10 scale
 	 */
-
+	
 	
 	/* Main program that tests the "decision" function */
 	public static void main(String[] args) {
@@ -23,4 +23,20 @@ public class DecisionMaker {
 		System.out.println("You should " + decision(12, 8) + " Project 4");
 	}
 
+	/* The new "decision" method */
+	static private String decision(int months, int difficulty) {
+		
+		/* Constants to define the boundaries in the quadchart */
+		final short hardjob = 7; // or higher
+		final short shortjob = 3; // months or less
+		
+		/* Make a decision as per the given quadchart */
+		if (difficulty < hardjob && months > shortjob)
+			return("accept");
+		else if (difficulty >= hardjob && months <= shortjob)
+			return("decline");
+		else
+			return("discuss");		
+	}
+	
 }
